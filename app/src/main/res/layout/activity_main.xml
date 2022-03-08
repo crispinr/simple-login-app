@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30343c"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|fill"
+        android:layout_marginStart="80dp"
+        android:gravity="clip_horizontal"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|fill"
+        android:layout_marginStart="80dp"
+        android:gravity="clip_horizontal"
+        android:text="Email"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        android:textStyle="normal|italic" />
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="casual"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>
