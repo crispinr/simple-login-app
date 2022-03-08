@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -14,9 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class
 MainActivity extends AppCompatActivity {
 
-    Button c, d;
-    EditText nameId, emailId;
-    String name, email;
+    Button c;
+    EditText nameId;
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +24,9 @@ MainActivity extends AppCompatActivity {
 
         c = findViewById(R.id.button);
         nameId = findViewById(R.id.editTextTextPersonName2);
-        emailId = findViewById(R.id.editTextTextPersonName);
-        c.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                name = nameId.getText().toString();
-                Toast.makeText(MainActivity.this, "Name: " + name, Toast.LENGTH_SHORT).show();
-            }
+        c.setOnClickListener(view -> {
+            name = nameId.getText().toString();
+            Toast.makeText(MainActivity.this, "Name: " + name, Toast.LENGTH_SHORT).show();
         });
     }
 
